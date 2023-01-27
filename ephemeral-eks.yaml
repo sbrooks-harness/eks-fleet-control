@@ -32,7 +32,7 @@ metadata:
 nodeGroups:
   - name: node-group-1
     instanceType: m5.large
-    desiredCapacity: 10
+    desiredCapacity: 2
     volumeSize: 80
     iam:
       withAddonPolicies:
@@ -59,6 +59,6 @@ addons:
     version: latest # auto discovers the latest available
   - name: kube-proxy
     version: latest
-
-karpenter:
-  version: "v0.18.0"
+#
+# karpenter:
+#   version: "v0.18.0"
